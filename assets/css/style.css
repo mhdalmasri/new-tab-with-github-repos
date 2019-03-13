@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+}
+
+body {
+  background-image: url("../img/woman-1081873_1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Sniglet', cursive;
+}
+
+header {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 150px
+}
+
+main {
+  margin-bottom: 200px
+}
+
+.card {
+  border-radius: 10px;
+  margin: 0 10px;
+  width: 250px;
+  height: 150px;
+}
+
+#searchbar {
+  background-color: white;
+  width: 50vw;
+  border-radius: 10px;
+  margin: 0 auto;
+  font-size: 1.5vw;
+  padding: 5px 10px
+}
+
+h2 {
+  font-weight: bold;
+  color: white
+}
+
+
+#time {
+  color: white;
+  font-size: 8vw;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 90px
+}
+
+#repos {
+  width: 100%;
+  margin-top: 30px;
+  flex-wrap: nowrap
+}
+
+#conf {
+  cursor: pointer;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+}
+
+.modal-dialog.modal-dialog-slideout {
+  width: 80%
+}
+
+
+.modal-dialog-slideout {
+  min-height: 100%;
+  margin: 0 auto 0 0;
+  background: #fff;
+}
+
+.modal.fade .modal-dialog.modal-dialog-slideout {
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
+
+.modal.fade.show .modal-dialog.modal-dialog-slideout {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  flex-flow: column;
+}
+
+.modal-dialog-slideout .modal-content {
+  border: 0;
+}

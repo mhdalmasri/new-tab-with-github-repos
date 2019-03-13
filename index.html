@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Github Repos</title>
+</head>
+<body class="container-fluid">
+  
+  <header><i class="fas fa-cog my-3" onmouseover="slideout()" id="conf" data-toggle="modal" data-target="#exampleModal2"></i></header>
+  <aside>
+      <div class="modal fade " id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-slideout modal-sm" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title" id="exampleModalLabel">Sittings . .</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <br>
+              <div class="modal-body ">
+                  <div class=" mx-auto w-75"><i class="p-1 border border-dark rounded-circle fas fa-user mx-2"></i> <input value="mhdalmasri" class="pl-1 rounded" type="text" name="user" id="user" placeholder=" github username . ." onkeyup="newGitRipo.search()"></div>
+                  <br>
+                  <h3 class="my-3">Backgrounds:</h3>
+                  <div class="row text-center text-white w-50 mx-auto ">
+                    <div class="bg-success col-12 my-3 py-3 rounded" style="cursor: pointer;background-image: url('assets/img/celebration.png')" onclick="one()">celebration</div>
+                    <div class="bg-primary col-12 my-3 py-3 rounded"style="cursor: pointer;background-image: url('assets/img/naranjas.png')" onclick="tow()">naranjas</div>
+                    <div class="bg-secondary col-12 my-3 py-3 rounded"style="cursor: pointer;background-image: url('assets/img/science.png')" onclick="three()">science</div>
+                    <div class="bg-info col-12 my-3 py-3 rounded"style="cursor: pointer;background-image: url('assets/img/wild-sea.png')" onclick="four()">wild-sea</div>
+                    <div class="bg-dark col-12 my-3 py-3 rounded"style="cursor: pointer;background-image: url('assets/img/brijan.gif')" onclick="five()">brijan</div>
+                    <div class="bg-danger  col-12 my-3 py-3 rounded"style="cursor: pointer;background-image: url('assets/img/retro-furnish.png')" onclick="six()">retro-furnish</div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+  </aside>
+  <main>
+    <div id="time"></div>
+    <div id="searchbar"><i class="fab fa-github"></i> <input class="ml-2 pl-2" type="text" name="text" id="filter" placeholder="Search Repository" style="border:none;width: 95%" onkeyup="newGitRipo.Filter()"></div>
+  </main>
+  <footer>
+    <div><h2>Last Repositories:</h2></div>
+    <div class="row scrolling-wrapper" id="repos"></div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
