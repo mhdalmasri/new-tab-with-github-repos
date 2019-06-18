@@ -8,6 +8,7 @@ an App using GitHub API to show github ripos and change background photo
 
 * HTML
 * CSS 
+* Bootstrab
 * JS
 * GitHub API
 
